@@ -15,26 +15,22 @@ body {
 {
 --logo-color:#4D5AE5;
 --header-word-color:#422e30;
+--header-background-color:#ffffff;
 --nav-link-color:#2E2F42;
---nav-link-active-color:#404BBF;
+--link-active-color:#404BBF;
 --cont-link-color:#434455;
---cont-link-active-color:#404BBF;
 --hero-background-color:#2E2F42;
 --hero-title-color:#FFFFFF;
 --main-btn-color:#FFFFFF;
---main-btn-active-color:#FFFFFF;
 --btn-color: #4D5AE5;
---btn-active-color: #FFFFFF;
---section-title-color:#2E2F42;
---section-subtitle-color:#2E2F42;
+--section-main-color:#2E2F42;
 --section-team-background-color:#F4F4FD;
 --footer-background-color:#2E2F42;
---footer-word-color:#F4F4FD;
---footer-text-color:#F4F4FD;
+--footer-main-text-color:#F4F4FD;
 }
 
 .header {
-    background-color: #ffffff;
+background-color: #FFFFFF;
 }
 
 /*--Данные логотипа--*/
@@ -72,7 +68,7 @@ text-decoration: none;
 
 .nav-link:hover,
 .nav-link:focus {
-color: var(--nav-link-active-color);
+color: var(--link-active-color);
 }
 
 /*--Данные контактов--*/
@@ -88,7 +84,7 @@ text-decoration: none;
 
 .cont-link:hover,
 .cont-link:focus {
-color: var(--cont-link-active-color);
+color: var(--link-active-color);
 }
 
 
@@ -120,7 +116,7 @@ cursor: pointer;
 
 .main-btn:hover,
 .main-btn:focus {
-color: var(--main-btn-active-color);
+color: var(--main-btn-color);
 background-color: #404BBF;
 }
 
@@ -138,13 +134,13 @@ background-color: #404BBF;
 
 .btn:hover,
 .btn:focus {
-    color: var(--btn-active-color);
+    color: var(--main-btn-color);
     background-color: #404BBF;
 }
 
 /*--Данные заголовка секции--*/
 .section-title {
-color: var(--section-title-color);
+color: var(--section-main-color);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -154,7 +150,7 @@ text-transform: capitalize
 
 /*--Данные подзаголовков--*/
 .section-subtitle {
-color: var(--section-subtitle-color);
+color: var(--section-main-color);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -182,7 +178,7 @@ background-color: var(--footer-background-color);
 }
 
 .footer-word
-{color: var(--footer-word-color);
+{color: var(--footer-main-text-color);
 font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
@@ -193,15 +189,9 @@ text-transform: uppercase;
 
 
 .footer-text {
-color: var(--footer-text-color);
+color: var(--footer-main-text-color);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-
-
-/*--Обнуление точек на ссылках--*/
-/*--li {
-list-style-type: none;
-}--*/
